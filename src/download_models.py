@@ -9,8 +9,8 @@ from huggingface_hub import snapshot_download
 
 # ── Config ────────────────────────────────────────────────────────────────────
 
-TOKEN_FILE = Path(__file__).parent / "hf_token.txt"
-MODELS_DIR = Path(__file__).parent / "models"
+TOKEN_FILE = Path(__file__).parent.parent / "hf_token.txt"
+MODELS_DIR = Path(__file__).parent.parent / "models"
 
 MODELS = [
     {

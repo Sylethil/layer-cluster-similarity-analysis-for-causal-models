@@ -1,11 +1,14 @@
 from nltk.corpus.reader import bnc
 import csv
+from pathlib import Path
 
-SIMLEX_999_PATH = './data/SimLex-999/SimLex-999.txt'
-MEN_PATH = './data/MEN/EN-MEN-LEM.txt'
+_PROJECT_ROOT = Path(__file__).parent.parent
+SIMLEX_999_PATH = str(_PROJECT_ROOT / 'data/SimLex-999/SimLex-999.txt')
+MEN_PATH = str(_PROJECT_ROOT / 'data/MEN/EN-MEN-LEM.txt')
 
 def get_bnc():
-    bnc_reader = bnc.BNCCorpusReader(root='D:/252 Project/data/BNC/Texts/', fileids=r'[A-K]/\w*/\w*\.xml')
+    bnc_root = str(_PROJECT_ROOT / 'data/BNC/Texts/')
+    bnc_reader = bnc.BNCCorpusReader(root=bnc_root, fileids=r'[A-K]/\w*/\w*\.xml')
     return bnc_reader
 
 def randomly(seq, pseudo=True):

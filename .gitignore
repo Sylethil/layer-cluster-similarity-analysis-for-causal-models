@@ -1,6 +1,6 @@
 # Large model and data files
 models/
-data/
+data/BNC/
 *.pkl
 
 # Sensitive credentials

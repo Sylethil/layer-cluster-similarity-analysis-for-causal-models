@@ -1,0 +1,20 @@
+# Large model and data files
+models/
+data/
+*.pkl
+
+# Sensitive credentials
+hf_token.txt
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Claude Code internals
+.claude/
+.mcp.json
+notebook_mcp_server.py
+_patch_notebook.py

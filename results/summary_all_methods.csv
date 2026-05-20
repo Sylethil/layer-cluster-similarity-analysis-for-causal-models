@@ -1,0 +1,10 @@
+Model / Method,SimLex-999 ρ,MEN ρ,Best config
+GPT-2 Large — initial (layer 0),0.0952,0.1081,non-contextual
+GPT-2 Large — final layer (no context),0.094,0.3332,non-contextual
+Llama 3.1 8B — initial (layer 0),-0.0921,0.0989,non-contextual
+Llama 3.1 8B — final layer (no context),0.1393,0.3262,non-contextual
+GPT-2 Large — simple context (best layer),0.501,0.679,SimLex layer 17; MEN layer 7
+Llama 3.1 8B — simple context (best layer),0.454,0.723,SimLex layer 21; MEN layer 6
+GPT-2 Large — MaxSim multi-prototype,0.574,0.725,"SimLex K=6, layer 17; MEN K=1, layer 0"
+Llama 3.1 8B — MaxSim multi-prototype,0.611,0.775,"SimLex K=6, layer 6; MEN K=2, layer 6"
+BERT-base — MaxSim (Chronis & Erk 2020),0.608,0.793,"SimLex K=5, layer 8; MEN K=9, layer 11"
